@@ -1,0 +1,35 @@
+## TEST en python       
+
+    1. Gestor de paquetes en python -> pip
+    2. Instalar libreria de test de python a traves de pip -> pytest  (https://docs.pytest.org/en/7.3.x/)
+
+Es mejor crear entornos virtuales -> nos instala phyton con la version que queramos y los paquetes que requieran
+
+    Instalación de entornos
+        1. Crear el entorno virtual en la misma carpeta del proyecto (aunque se puede crear donde queramos)
+            python -m venv <nombre_entorno>
+        2. Activar el entorno virtual
+            pip3 freeze -> listas las librerias instalas en pip 
+            source <ruta_del_entorno/bin/activate -> para mac
+
+        3. Para sincronizarlo con VS hay que seleccionarlo en la parte de abajo del VS donde pone la version 
+
+        4. Instalar la libreia pytest -> pip install pytest
+
+        5. Crear el archivo de requerimientos 
+            pip freze > requeriments.txt 
+
+        6. Instalar las librerias en el archivo 
+            pip install -r requeriments.txt
+
+## Uso del pytest
+    crear fichero text_xxxxx.py -> detecta los archivos de prueba por el comienzo del archivo
+        1.  se crea una funcion con la comprobación
+                def test_uno_es_palito():
+                    assert entero_a_romano(1) == 'I'
+
+        2.  Importar el archivo a probar en el archivo test
+        
+        3.  Para ejecutar las pruebas tenemos que ejecutar por consola pytest y reconoce automaticamente 
+            todos los archivos que empiecen por test_
+

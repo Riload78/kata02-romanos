@@ -1,6 +1,5 @@
 import pytest
-from romannumber import RomanNumberError
-from romannumber import entero_a_romano
+from romannumber import entero_a_romano, RomanNumberError
 
 
 def test_uno_es_palito():

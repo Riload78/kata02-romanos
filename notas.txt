@@ -7,7 +7,7 @@ Es mejor crear entornos virtuales -> nos instala phyton con la version que quera
 
     Instalación de entornos
         1. Crear el entorno virtual en la misma carpeta del proyecto (aunque se puede crear donde queramos)
-            python -m venv <nombre_entorno>
+            . <nombre_entorno>
         2. Activar el entorno virtual
             pip3 freeze -> listas las librerias instalas en pip 
             source <ruta_del_entorno/bin/activate -> para mac
